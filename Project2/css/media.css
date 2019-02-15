@@ -1,0 +1,472 @@
+@media screen and (max-width: 2560px) {
+	.advertising{
+		background-size: contain;
+		background-position: center;
+	}
+}
+
+@media screen and (max-width: 1930px) {
+	.advertising{
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.hdr_menu li{
+		font-size: 14px;
+		padding-left: 28px;
+	}
+
+	.inr1_img {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+
+	.inr1_theme{
+		display: flex;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.row_img1{
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 30px;
+	}
+
+	.row_img2{
+		display: flex;
+		flex: 0 0 2%;
+		margin-bottom: 30px;
+	}
+
+	.pay_section{
+		height: 590px;
+	}
+
+	.pay_sec2{
+		padding-top: 0;
+	}
+
+	.ftr_cont{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.ftr_menu{
+		display: none;
+	}
+
+	.ftr_media_scr ul{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.ftr_media_scr li{
+		font-size: 17px;
+		padding-bottom: 10px;
+	}
+
+	.ftr_media_scr2 ul{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.ftr_media_scr2 li{
+		font-size: 17px;
+		padding-bottom: 10px;
+	}
+
+	.ftr_media_scr{
+		display: flex;
+		justify-content: center;
+	}
+
+	.pay_img2{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.advertising{
+	background-image: url(../img/adver1.jpg);
+	height: 870px;
+	}
+
+	.media_col1{
+		margin: 0;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.media_col2{
+		display: flex;
+		justify-content: center;
+	}
+
+	.pay_img2:last-child{
+		margin-top: 30px;
+	}
+
+	.pay_sec2{
+		margin-left: 0px;
+	}
+
+	.pay_section{
+		height: 686px;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+	.hdr_menu{
+		display: none;
+	}
+
+	.hamburger_menu{
+		display: flex;
+	}
+
+	.nav_menu{
+		padding-top: 21px;
+	}
+
+	.logo{
+		position: relative;
+		bottom: -3px;
+	}
+
+	.intro2{
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.btn_2_align{
+		display: flex;
+		justify-content: center;
+	}
+
+	.inr3_cards{
+		display: flex;
+		justify-content: center;
+	}
+
+	.ftr_cont{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.ftr_media_scr{
+		display: none;
+	}
+
+	.ftr_media_scr2{
+		display: flex;
+	}
+
+	.ftr_media{
+		margin-left: 10px;
+	}
+
+	.advertising{
+	background-image: url(../img/adver2.jpg);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.pay_section{
+		height: 735px;
+	}
+
+	.intro2{
+		height: 540px;
+	}
+
+	.inr3_card{
+		margin-bottom: 30px;
+	}
+
+	.advertising{
+		background-image: url(../img/adver3.jpg);
+		height: 930px;
+	}
+
+	.adver_theme1{
+		margin-top: 255px;
+	}
+
+	.adver_theme2{
+		margin-top: 60px;
+	}
+
+	.ath1_card1 h4{
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 655px) {
+	.inr1_img{
+		display: none;
+	}
+
+	.inr1_img2{
+		display: block;
+		padding-bottom: 35px;
+	}
+}
+
+@media screen and (max-width: 625px) {
+	.bnr_theme h1{
+		font-size: 40px;
+		width: 432px;
+	}
+
+	.bnr_theme p{
+		font-family: 'Proxima Nova Rg';
+		font-size: 16px;
+	}
+
+	.second_h1 h1{
+		padding-bottom: 25px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.inr1_img2{
+		display: none;
+	}
+
+	ul{
+		padding: 0 15px;
+	}
+
+	.inr1_img3{
+		display: block;
+		padding-bottom: 35px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.row_img1{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	.row_img2{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+		flex: none;
+	}
+
+	.pay_img2{
+		margin-right: 0;
+		max-width: 100%;
+	}
+
+	.media_col1{
+		padding-top: 30px;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.pay_section{
+		height: 1126px;
+	}
+
+	.advertising{
+		background-image: url(../img/adver4.jpg);
+		height: 1450px;
+	}
+
+	.adver_theme1{
+		display: flex;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		margin-top: 395px;
+	}
+
+	.adver_theme2{
+		margin-top: 0;
+	}
+
+	.ath1_card1 h4{
+		font-size: 21px;
+	}
+
+	.ath1_card1 h4{
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.bnr_theme h1{
+		font-size: 35px;
+		width: 352px;
+	}
+
+	.bnr_theme p{
+		font-family: 'Proxima Nova Rg';
+		font-size: 15px;
+	}
+
+	.second_h1 h1{
+		padding-bottom: 25px;
+	}
+
+	.intro2{
+		height: 580px;
+	}
+
+	.border1{
+		width: 345px;
+	}
+
+	.counter_ftr{
+		display: none;
+	}
+
+	.counter_ftr2{
+		display: block;
+		margin-bottom: 55px;
+	}
+
+	.bnr_buttons{
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+	}
+
+	.banner{
+		padding-top: 145px;
+	}
+
+	.btn1{
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+}
+
+@media screen and (max-width: 412px) {
+	.inr1_img3{
+		display: none;
+	}
+
+	.inr1_img4{
+		display: flex;
+		justify-content: center;
+		padding-bottom: 35px;
+	}
+
+	.intro2{
+		height: 630px;
+	}
+
+}
+
+@media screen and (max-width: 401px) {
+	.bnr_theme h1{
+		font-size: 34px;
+		width: 332px;
+	}
+
+	ul{
+		padding: 0 15px;
+	}
+
+}
+
+@media screen and (max-width: 381px) {
+	.bnr_theme h1{
+		font-size: 32px;
+		width: 302px;
+	}
+
+	.intro2{
+		height: 660px;
+	}
+
+	.ftr_media_scr2 ul{
+		padding: 0;
+		width: 100px;
+		display: flex;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+		margin: 0;
+		padding-bottom: 30px;
+	}
+
+	.li_width{
+		width: 150px;
+	}
+
+	.ftr_media_scr2 li{
+		font-size: 14px;
+		-ms-align-items: center;
+		align-items: center;
+	}
+
+}
+
+@media screen and (max-width: 359px) {
+	.adver_theme1{
+		margin-top: 365px;
+	}
+
+	.advertising{
+		background-image: url(../img/adver6.jpg);
+		height: 1450px;
+	}
+}
+
+@media screen and (max-width: 353px) {
+	.bnr_theme h1{
+		font-size: 32px;
+		width: 262px;
+	}
+
+	.border1{
+		width: 285px;
+	}
+
+	.pay_img2{
+		display: flex;
+		justify-content: center;
+	}
+
+}
+
+@media screen and (max-width: 339px) {
+	.intro2{
+		height: 690px;
+	}
+
+	.autor{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 332px) {
+	.intro2{
+		height: 715px;
+	}
+}
+
+
+
+
+
