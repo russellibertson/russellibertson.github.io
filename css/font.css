@@ -1,0 +1,31 @@
+@font-face {
+font-family: 'TruenoBd';
+src: url('font/TruenoBd.otf');
+src: url('font/TruenoBd.otf?#iefix') format('embedded-opentype'),
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'TruenoLt';
+src: url('font/TruenoLt.otf');
+src: url('font/TruenoLt.otf?#iefix') format('embedded-opentype'),
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'TruenoRg';
+src: url('font/TruenoRg.otf');
+src: url('font/TruenoRg.otf?#iefix') format('embedded-opentype'),
+font-weight: normal;
+font-style: normal;
+}
+
+/*@font-face {
+font-family: 'Proxima Nova Bold';
+src: url('font/ProximaNova-Bold.eot');
+src: url('font/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+font-weight: normal;
+font-style: normal;
+}*/
