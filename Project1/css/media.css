@@ -428,10 +428,9 @@
 		border-radius: 0;
 		border: 0;
 		display: flex;
-		justify-content: center;
-		min-width: 100%;
+		justify-content: flex-start;
+		min-width: 20%;
 		height: 0;
-		-ms-align-items: center;
 		align-items: center;
 		text-transform: uppercase;
 		color: #fff;
