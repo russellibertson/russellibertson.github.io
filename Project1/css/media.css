@@ -429,7 +429,7 @@
 		border: 0;
 		display: flex;
 		justify-content: center;
-		width: 0;
+		min-width: 100%;
 		height: 0;
 		-ms-align-items: center;
 		align-items: center;
