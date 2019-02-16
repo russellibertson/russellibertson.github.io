@@ -421,6 +421,22 @@
 	    padding-top: 60px;
 	}
 
+	.logo{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 35px;
+		border-radius: 0;
+		border: 0;
+		display: flex;
+		justify-content: center;
+		width: 0;
+		height: 0;
+		-ms-align-items: center;
+		align-items: center;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
 	header {
 	    padding-bottom: 260px;
 	}
