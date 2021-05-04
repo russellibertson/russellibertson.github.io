@@ -73,6 +73,11 @@ h1 {
   font-weight: 700;
 }
 
+h1 span {
+  display: block;
+  line-height: 93px;
+}
+
 h2 {
   font-size: 42px;
   line-height: 45px;
@@ -1087,6 +1092,10 @@ nav ul a {
     text-align: center;
   }
 
+  h1 span {
+    line-height: 63px;
+  }
+
   h2 {
     font-size: 28px;
     line-height: 35px;
@@ -1416,6 +1425,10 @@ nav ul a {
   .offer__main h1 {
     font-size: 40px;
     line-height: 50px;
+  }
+
+  .offer__main h1 span {
+    line-height: 48px;
   }
 
   .offer__main p {
