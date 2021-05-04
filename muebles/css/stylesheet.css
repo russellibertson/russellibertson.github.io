@@ -637,6 +637,12 @@ nav ul a {
   position: relative;
 }
 
+.map iframe {
+  border: 0;
+  height: 500px;
+  width: 100% !important;
+}
+
 .contacts__block {
   position: absolute;
   right: 200px;
