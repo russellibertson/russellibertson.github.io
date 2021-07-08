@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Турпортал СПБ</title>
+   <link rel="stylesheet" href="css/style-event.css">
+   <link rel="stylesheet" href="css/template_styles.css">
+</head>
+
+<body>
+
+   <div class="main">
+      <!-- header -->
+      <header class="header">
+         <div class="header__logo">
+            <img src="img/header/logo.svg" alt="#">
+         </div>
+         <div class="header__inner">
+            <div class="header__list">
+               <ul class="header__list-nav">
+                  <li>
+                     <a href="#">Новости</a>
+                  </li>
+                  <li>
+                     <a href="#">События</a>
+                  </li>
+                  <li class="header__item">
+                     <button class="header__btn">Куда пойти</button>
+                     <ul class="header__list-menu">
+                        <li>
+                           <a href="#">Достопримечательности</a>
+                        </li>
+                        <li>
+                           <a href="#">Маршруты</a>
+                        </li>
+                        <li>
+                           <a href="#">Экскурсии</a>
+                        </li>
+                        <li>
+                           <a href="#">Где поесть</a>
+                        </li>
+                        <li>
+                           <a href="#">Религия</a>
+                        </li>
+                        <li>
+                           <a href="#">Развлечения</a>
+                        </li>
+                        <li>
+                           <a href="#">Окрестности</a>
+                        </li>
+                        <li>
+                           <a href="#">Шопинг</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="header__item">
+                     <button class="header__btn">Моя поездка</button>
+                     <ul class="header__list-menu">
+                        <li>
+                           <a href="#">Где остановиться</a>
+                        </li>
+                        <li>
+                           <a href="#">Транспорт</a>
+                        </li>
+                        <li>
+                           <a href="#">Гиды-переводчики и экскурсоводы</a>
+                        </li>
+                        <li>
+                           <a href="#">Информационные центры</a>
+                        </li>
+                        <li>
+                           <a href="#">Тематический туризм</a>
+                        </li>
+                        <li>
+                           <a href="#">Льготным категориям</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="header__item">
+                     <button class="header__btn">Информация</button>
+                     <ul class="header__list-menu">
+                        <li>
+                           <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                           <a href="#">Справочная информация</a>
+                        </li>
+                        <li>
+                           <a href="#">Ссылки на социальные сети</a>
+                        </li>
+                        <li>
+                           <a href="#">Добавить страницу</a>
+                        </li>
+                        <li>
+                           <a href="#">Подписаться на рассылку</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <button class="header__close">
+                  <img src="img/header/close.svg" alt="#">
+               </button>
+            </div>
+            <nav class="header__nav">
+               <button class="header__search">
+                  <img src="img/header/search.svg" alt="#">
+               </button>
+               <a href="#">
+                  <img class="header__logo-2" src="img/header/logo-2.svg" alt="#">
+               </a>
+               <button>
+                  <img src="img/header/eye.svg" alt="#">
+               </button>
+               <a class="header__lang" href="#">RU</a>
+               <button class="header__icon">
+                  <img src="img/header/icon.svg" alt="#">
+               </button>
+               <button class="header__menu">
+                  <img src="img/header/menu.svg" alt="#">
+               </button>
+            </nav>
+         </div>
+      </header>
+      <!-- header -->
+      <div class="main__inner">
+         <!-- event-content -->
+         <div class="event-content">
+            <div class="container">
+               <div class="event-event-content__inner">
+                  <!-- event-filter -->
+                  <div class="event-filter">
+                     <div class="event-filter__inner">
+                        <nav class="filter__nav-map">
+                           <button class="filter__btn">Новое <span>8</span></button>
+                           <button class="filter__btn filter__btn-nav--active">Популярное</button>
+                        </nav>
+                        <div class="event-filter__wrap">
+                           <div class="event-filter__panel filter__panel">
+                              <button class="filter__toggle">
+                                 <svg>
+                                    <use xlink:href="sprite/sprite.svg#filter-icon"></use>
+                                 </svg>
+                              </button>
+                              <span>Фильтры</span>
+                           </div>
+                           <div class="event-filter__sort">
+                              <button class="filter__btn filter__btn-sort--active">Все</button>
+                              <button class="filter__btn">Популярное</button>
+                           </div>
+                        </div>
+                        <div class="event-filter__wrap">
+                           <button class="event-filter__add">
+                              <img src="img/filter/plus-circle.svg" alt="#">
+                              <span>Подать заявку на включение события в календарь событий</span>
+                           </button>
+                           <nav class="event-filter__nav">
+                              <button class="filter__btn" id="map-toggle">Карта</button>
+                              <button class="filter__btn filter__btn--active" id="list-toggle">Список</button>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- event-filter -->
+                  <!-- event-items -->
+                  <div class="event-content__wrap">
+                     <!-- panel -->
+                     <div class="col-3">
+                        <div class="panel">
+                           <div class="event-panel__nav">
+                              <div class="event-panel__nav-wrap">
+                                 <a class="event-panel__link" href="#">Скачать «Единый календарь событий
+                                    Санкт-Петербурга 2021»</a>
+                              </div>
+                           </div>
+                           <ul class="panel__nav">
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">События Комитета по развитию туризма Санкт-Петербурга <img
+                                       class="panel__arrow panel__arrow--active" src="img/filter/arrow.svg"
+                                       alt="#"></button>
+                                 <ul class="panel__list panel-active">
+                                    <li>
+                                       <button class="panel__list-btn">Достопримечательности</button>
+                                       <ul class="panel__links panel-active">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn">Памятники</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn">Фонтаны</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn">Парки</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn">Обзорные площадки</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn">Религиозные места</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn">Свадебный Петербург</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn">Улицы</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn">Интересные места</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Подборки <img class="panel__arrow"
+                                       src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list ">
+                                    <ul class="panel__links panel__links--active">
+                                       <li>
+                                          <a class="panel__link" href="#">Топ-25</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Фестивали и праздники Петербурга</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Спортивный Петербург</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Культурный Петербург</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Деловой Петербург</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Петербург – детям</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Городская жизнь</a>
+                                       </li>
+                                    </ul>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Категория<img class="panel__arrow"
+                                       src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list ">
+                                    <ul class="panel__links panel__links--active">
+                                       <li>
+                                          <a class="panel__link panel__link--active" href="#">Все события</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Онлайн</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Open Air</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Фестивали</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Выставки</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Спектакли</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Концерты</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Шоу</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Лекции</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Форумы</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Конференции</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Семинары</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Памятные даты</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Другое</a>
+                                       </li>
+                                    </ul>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Даты<img class="panel__arrow" src="img/filter/arrow.svg"
+                                       alt="#"></button>
+                                 <ul class="panel__list ">
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-1.svg" alt="#">
+                                          Достопримечательности</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-2.svg" alt="#">
+                                          Памятники</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-3.svg" alt="#">
+                                          Фонтаны</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-4.svg" alt="#">
+                                          Парки</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-5.svg" alt="#">
+                                          Обзорные площадки</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-6.svg" alt="#">
+                                          Религиозные места</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-7.svg" alt="#">
+                                          Свадебный Петербург</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-8.svg" alt="#">
+                                          Улицы</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <button class="panel__list-btn"><img src="img/filter/icon-9.svg" alt="#">
+                                          Интересные места</button>
+                                       <ul class="panel__links">
+                                          <li>
+                                             <a class="panel__link panel__link--active" href="#">Знаковые места</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Дворцы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Места воинской славы</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Православные святыни</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Мосты</a>
+                                          </li>
+                                          <li>
+                                             <a class="panel__link" href="#">Площади</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Район города<img class="panel__arrow"
+                                       src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list ">
+                                    <ul class="panel__links panel__links--active">
+                                       <li>
+                                          <a class="panel__link panel__link--active" href="#">Все события</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Онлайн</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Open Air</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Фестивали</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Выставки</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Спектакли</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Концерты</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Шоу</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Лекции</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Форумы</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Конференции</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Семинары</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Памятные даты</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Другое</a>
+                                       </li>
+                                    </ul>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Доступная среда<img class="panel__arrow"
+                                       src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list ">
+                                    <ul class="panel__links panel__links--active">
+                                       <li>
+                                          <a class="panel__link panel__link--active" href="#">Все события</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Онлайн</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Open Air</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Фестивали</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Выставки</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Спектакли</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Концерты</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Шоу</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Лекции</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Форумы</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Конференции</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Семинары</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Памятные даты</a>
+                                       </li>
+                                       <li>
+                                          <a class="panel__link" href="#">Другое</a>
+                                       </li>
+                                    </ul>
+                                 </ul>
+                              </li>
+                              <li class="panel__checkbox">
+                                 <form action="/">
+                                    <input class="panel__input" type="checkbox" name="free" id="free">
+                                    <label class="panel__label" for="free">Бесплатное посещение</label>
+                                 </form>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- panel -->
+                     <!-- event-content__items -->
+                     <div class="col-9">
+                        <div class="event-content__nav">
+                           <div class="event-content__nav-wrap">
+                              <a class="event-content__link" href="#">Календарь событий Москва – Петербург</a>
+                              <img src="img/filter/chevron-right.svg" alt="#">
+                           </div>
+                           <div class="event-content__nav-wrap">
+                              <a class="event-content__link" href="#">Календарь событий «Серебряное ожерелье России»</a>
+                              <img src="img/filter/chevron-right.svg" alt="#">
+                           </div>
+                        </div>
+                        <div class="event-content__items">
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-1.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">Творческое пространство «Поляна»</a>
+                              <div class="item__subtitle">Московский парк Победы</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-2.png" alt="#">
+                                 <button class="item__icon item__icon--active">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">«Русские Музыкальные Сезоны»</a>
+                              <div class="item__subtitle">Дом учёных им. М. Горького РАН (Дворец великого князя
+                                 Владимира Александровича)</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-3.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">Императрица. Петергофский аспект биографии. К 290-летию
+                                 Екатерины II</a>
+                              <div class="item__subtitle">Музей-заповедник "Петергоф"</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-4.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">Звуковое шоу «Поющие мосты»</a>
+                              <div class="item__subtitle">Санкт-Петербург, Россия</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-5.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">Финальный турнир чемпионата Европы по футболу EURO
+                                 2020</a>
+                              <div class="item__subtitle">Санкт-Петербург, Россия</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-6.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">Здание Биржи</a>
+                              <div class="item__subtitle">Санкт-Петербург, Биржевая площадь, 4</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-7.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">Премьера программы, посвященной 100-летию со дня смерти А.
+                                 А. Блока</a>
+                              <div class="item__subtitle">Исаакиевский Собор</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-8.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">«Дивный Павловск». Летний арт-фестиваль</a>
+                              <div class="item__subtitle">Павловский парк</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-9.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">Фестиваль фантастики и фэнтези «F2»</a>
+                              <div class="item__subtitle">Санкт-Петербург, Россия</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-10.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">XI международный фестиваль уличных театров «Елагин
+                                 парк»</a>
+                              <div class="item__subtitle">Центральный парк культуры и отдыха им. С.М. Кирова</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-11.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">Уличное мероприятие «Молодежь — надежда России!»</a>
+                              <div class="item__subtitle">Таврический сад</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/foto-pages/event-12.png" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                                 <div class="item__date">
+                                    <img src="img/filter/date.svg" alt="#">
+                                    <span>01.06 – 31.08</span>
+                                 </div>
+                              </div>
+                              <a class="item__title" href="#">XI фестиваль «Ночь музыки в Гатчине»</a>
+                              <div class="item__subtitle">Государственный музей-заповедник «Гатчина»</div>
+                           </div>
+                        </div>
+                        <!-- event-content__items -->
+                        <!-- pagination -->
+                        <div class="pagination">
+                           <button class="pagination__btn">Показать еще</button>
+                           <nav class="pagination__nav">
+                              <a class="pagination__link pagination__link--active" href="#">1</a>
+                              <a class="pagination__link" href="#">2</a>
+                              <span>...</span>
+                              <a class="pagination__link" href="#">28</a>
+                              <a class="pagination__link" href="#">29</a>
+                              <a class="pagination__arrow" href="#">
+                                 <img src="img/pagination/arrow.svg" alt="#">
+                              </a>
+                           </nav>
+                        </div>
+                        <!-- pagination -->
+                     </div>
+                  </div>
+                  <!-- event-items -->
+               </div>
+            </div>
+         </div>
+         <!-- event-content -->
+         <!-- nav -->
+         <div class="nav-panel">
+            <div class="container">
+               <div class="nav-panel__inner">
+                  <div class="nav-panel__item">
+                     <div class="nav-panel__content">
+                        <div class="nav-panel__header">
+                           <span>события</span>
+                           <button class="nav-panel__btn">
+                              <svg>
+                                 <use xlink:href="sprite/sprite.svg#add"></use>
+                              </svg>
+                           </button>
+                        </div>
+                        <h3>Concept Cars: La Grande Bellezza</h3>
+                        <div class="nav-panel__date">
+                           <img src="img/filter/date.svg" alt="#">
+                           <span>10.04 – 16.04</span>
+                        </div>
+                        <div class="nav-panel__address">
+                           <img src="img/filter/point-map.svg" alt="#">
+                           <span>29 лин. Васильевского острова, 2</span>
+                        </div>
+                     </div>
+                     <div class="nav-panel__foto">
+                        <img src="img/foto-pages/foto-1.png" alt="#">
+                     </div>
+                  </div>
+                  <div class="nav-panel__item">
+                     <div class="nav-panel__content">
+                        <div class="nav-panel__header">
+                           <span>события</span>
+                           <button class="nav-panel__btn nav-panel__btn--active">
+                              <svg>
+                                 <use xlink:href="sprite/sprite.svg#add"></use>
+                              </svg>
+                           </button>
+                        </div>
+                        <h3>Concept Cars: La Grande Bellezza</h3>
+                        <div class="nav-panel__date">
+                           <img src="img/filter/date.svg" alt="#">
+                           <span>10.04 – 16.04</span>
+                        </div>
+                        <div class="nav-panel__address">
+                           <img src="img/filter/point-map.svg" alt="#">
+                           <span>29 лин. Васильевского острова, 2</span>
+                        </div>
+                     </div>
+                     <div class="nav-panel__foto">
+                        <img src="img/foto-pages/foto-1.png" alt="#">
+                     </div>
+                  </div>
+                  <div class="nav-panel__item">
+                     <div class="nav-panel__content">
+                        <div class="nav-panel__header">
+                           <span>события</span>
+                           <button class="nav-panel__btn nav-panel__btn--active">
+                              <svg>
+                                 <use xlink:href="sprite/sprite.svg#add"></use>
+                              </svg>
+                           </button>
+                        </div>
+                        <h3>Concept Cars: La Grande Bellezza</h3>
+                        <div class="nav-panel__date">
+                           <img src="img/filter/date.svg" alt="#">
+                           <span>10.04 – 16.04</span>
+                        </div>
+                        <div class="nav-panel__address">
+                           <img src="img/filter/point-map.svg" alt="#">
+                           <span>29 лин. Васильевского острова, 2</span>
+                        </div>
+                     </div>
+                     <div class="nav-panel__foto">
+                        <img src="img/foto-pages/foto-1.png" alt="#">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- nav -->
+         <!-- map -->
+         <div class="map">
+            <div class="map__inner">
+               <div class="map__iframe" id="map"></div>
+            </div>
+         </div>
+         <!-- map -->
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+         <div class="footer__conctacts">
+            <div class="footer__title">Контакты</div>
+            <ul class="footer__list">
+               <li class="footer__address">
+                  <img src="img/footer/icon-1.svg" alt="#">
+                  <span>Санкт-Петербург, ул. Садовая, 37</span>
+               </li>
+               <li>
+                  <img src="img/footer/icon-2.svg" alt="#">
+                  <a href="tel:78002228812">+7 (800) 222-88-12 </a>
+               </li>
+               <li>
+                  <img src="img/footer/icon-3.svg" alt="#">
+                  <span>info@visit-petersburg.ru</span>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__center">
+            <div class="footer__desc">© 2021 Туристский реестр Санкт-Петербурга</div>
+         </div>
+         <div class="footer__social">
+            <ul class="footer__icons">
+               <li>
+                  <a href="#">
+                     <img src="img/footer/vk.svg" alt="#">
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="img/footer/facebook.svg" alt="#">
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="img/footer/ok.svg" alt="#">
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="img/footer/inst.svg" alt="#">
+                  </a>
+               </li>
+            </ul>
+            <a class="footer__link" href="#">Информационные центры</a>
+         </div>
+      </footer>
+
+      <div class="popup-address">
+         <div class="popup-address__inner">
+            <div class="popup-address__header">
+               <div class="popup-address__title">Адрес</div>
+               <button class="popup-address__close">
+                  <img src="img/footer/close.svg" alt="#">
+               </button>
+            </div>
+            <div class="popup-address__subtitle">
+               <img src="img/footer/point.svg" alt="#">
+               <span>Санкт-Петербург, ул. Садовая, 37</span>
+            </div>
+            <div class="popup-address__map-wrap">
+               <div class="popup-address__map" id="addressMap"></div>
+            </div>
+         </div>
+      </div>
+      <!-- footer -->
+   </div>
+
+   <!-- script-js -->
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <script src="js/scripts.js"></script>
+   <!-- map -->
+   <script src="js/map.js"></script>
+   <!-- map -->
+</body>
+
+</html>

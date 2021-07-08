@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Турпортал СПБ</title>
+   <link rel="stylesheet" href="css/style-restaurant-list.css">
+   <link rel="stylesheet" href="css/template_styles.css">
+</head>
+
+<body>
+
+   <div class="main">
+      <!-- header -->
+      <header class="header" itemscope itemtype="https://schema.org/WPHeader">
+         <div class="container-fluid container-xxl">
+             <div class="row align-items-center g-0">
+                 <div class="col-auto logo">
+                     <a href="#">
+                         <img src="images/logo/logo.svg" alt="...">
+                     </a>
+                 </div>
+                 <div class="col">
+                     <nav class="menu-body">
+                         <ul class="nav main-nav">
+                             <li class="nav-li is_active">
+                                 <a href="#" class="nav-a">Новости</a>
+                             </li>
+                             <li class="nav-li">
+                                 <a href="#" class="nav-a">События</a>
+                             </li>
+                             <li class="nav-li">
+                                 <a href="#" class="nav-a">Куда пойти</a>
+                                 <button type="button" class="nav-arrow">
+                                     <svg fill="currentColor"><use xlink:href="images/icons.svg#nav_arrow"></use></svg>
+                                 </button>
+                                 <ul class="nav flex-column sub-ul">
+                                     <li class="sub-li is_active">
+                                         <a href="#" class="sub-a">Достопримечательности</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Маршруты</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Экскурсии</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Где поесть</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Религия</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Развлечения</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Окрестности</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Шопинг</a>
+                                     </li>
+                                 </ul>
+                             </li>
+                             <li class="nav-li">
+                                 <a href="#" class="nav-a">Моя поездка</a>
+                                 <button type="button" class="nav-arrow">
+                                     <svg fill="currentColor"><use xlink:href="images/icons.svg#nav_arrow"></use></svg>
+                                 </button>
+                                 <ul class="nav flex-column sub-ul">
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Где остановится </a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Транспорт</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Гиды-переводчики и экскурсоводы </a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Информационные центры</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Тематический туризм</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Статьи</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Путеводители </a>
+                                     </li>
+                                 </ul>
+                             </li>
+                             <li class="nav-li">
+                                 <a href="#" class="nav-a">Информация</a>
+                                 <button type="button" class="nav-arrow">
+                                     <svg fill="currentColor"><use xlink:href="images/icons.svg#nav_arrow"></use></svg>
+                                 </button>
+                                 <ul class="nav flex-column sub-ul">
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Справочная информация</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Контакты</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Визовые центры</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">E-visa</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Консульства</a>
+                                     </li>
+                                     <li class="sub-li">
+                                         <a href="#" class="sub-a">Почта</a>
+                                     </li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </nav>
+                 </div>
+                 <div class="col-auto">
+                     <a href="#" class="h-search">
+                         <svg fill="currentColor"><use xlink:href="images/icons.svg#search"></use></svg>
+                     </a>
+                 </div>
+                 <div class="col-auto">
+                     <a href="#" class="h-eye">
+                         <svg fill="currentColor"><use xlink:href="images/icons.svg#eye"></use></svg>
+                     </a>
+                 </div>
+                 <div class="col-auto">
+                     <select class="language-select">
+                         <option>RU</option>
+                         <option>EN</option>
+                     </select>
+                 </div>
+                 <div class="col-auto">
+                     <a href="#" class="h-favorites">
+                         <svg fill="currentColor"><use xlink:href="images/icons.svg#favorites"></use></svg>
+                         <span></span>
+                     </a>
+                 </div>
+                 <div class="col-auto">
+                     <a href="#" class="h-logo">
+                         <img src="images/logo/safe-travels.svg" alt="...">
+                     </a>
+                 </div>
+                 <div class="col-auto d-block d-lg-none">
+                     <button type="button" class="hamburger">
+                         <b></b>
+                         <b></b>
+                         <b></b>
+                     </button>
+                 </div>
+             </div>
+         </div>
+      </header>
+      <!-- header -->
+      <div class="main__inner">
+         <!-- filter -->
+         <div class="filter">
+            <div class="container">
+               <div class="filter__inner">
+                  <div class="filter__panel">
+                     <button class="filter__toggle">
+                        <img src="img/about/settings.svg" alt="#">
+                     </button>
+                     <span>Фильтры</span>
+                  </div>
+                  <nav class="filter__nav-map">
+                     <button class="filter__btn">Новое <span>8</span></button>
+                     <button class="filter__btn filter__btn-nav--active">Популярное</button>
+                  </nav>
+                  <nav class="filter__nav">
+                     <button class="filter__btn" id="map-toggle">Карта</button>
+                     <button class="filter__btn filter__btn--active" id="list-toggle">Список</button>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <!-- filter -->
+
+         <!-- nav-panel -->
+         <div class="nav-panel">
+            <div class="container">
+               <div class="nav-panel__inner">
+                  <div class="nav-panel__item">
+                     <div class="nav-panel__content">
+                        <div class="nav-panel__header">
+                           <span>события</span>
+                           <button class="nav-panel__btn">
+                              <svg>
+                                 <use xlink:href="sprite/sprite.svg#add"></use>
+                              </svg>
+                           </button>
+                        </div>
+                        <h3>Concept Cars: La Grande Bellezza</h3>
+                        <div class="nav-panel__date">
+                           <img src="img/filter/date.svg" alt="#">
+                           <span>10.04 – 16.04</span>
+                        </div>
+                        <div class="nav-panel__address">
+                           <img src="img/filter/point-map.svg" alt="#">
+                           <span>29 лин. Васильевского острова, 2</span>
+                        </div>
+                     </div>
+                     <div class="nav-panel__foto">
+                        <img src="img/foto-pages/foto-1.png" alt="#">
+                     </div>
+                  </div>
+                  <div class="nav-panel__item">
+                     <div class="nav-panel__content">
+                        <div class="nav-panel__header">
+                           <span>события</span>
+                           <button class="nav-panel__btn nav-panel__btn--active">
+                              <svg>
+                                 <use xlink:href="sprite/sprite.svg#add"></use>
+                              </svg>
+                           </button>
+                        </div>
+                        <h3>Concept Cars: La Grande Bellezza</h3>
+                        <div class="nav-panel__date">
+                           <img src="img/filter/date.svg" alt="#">
+                           <span>10.04 – 16.04</span>
+                        </div>
+                        <div class="nav-panel__address">
+                           <img src="img/filter/point-map.svg" alt="#">
+                           <span>29 лин. Васильевского острова, 2</span>
+                        </div>
+                     </div>
+                     <div class="nav-panel__foto">
+                        <img src="img/foto-pages/foto-1.png" alt="#">
+                     </div>
+                  </div>
+                  <div class="nav-panel__item">
+                     <div class="nav-panel__content">
+                        <div class="nav-panel__header">
+                           <span>события</span>
+                           <button class="nav-panel__btn nav-panel__btn--active">
+                              <svg>
+                                 <use xlink:href="sprite/sprite.svg#add"></use>
+                              </svg>
+                           </button>
+                        </div>
+                        <h3>Concept Cars: La Grande Bellezza</h3>
+                        <div class="nav-panel__date">
+                           <img src="img/filter/date.svg" alt="#">
+                           <span>10.04 – 16.04</span>
+                        </div>
+                        <div class="nav-panel__address">
+                           <img src="img/filter/point-map.svg" alt="#">
+                           <span>29 лин. Васильевского острова, 2</span>
+                        </div>
+                     </div>
+                     <div class="nav-panel__foto">
+                        <img src="img/foto-pages/foto-1.png" alt="#">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- nav-panel -->
+
+         <div class="content">
+            <div class="container">
+               <div class="content__inner">
+                  <div class="content__wrap">
+                     <div class="col-3">
+                        <div class="panel">
+                           <!-- panel__nav -->
+                           <ul class="panel__nav">
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Сортировка <img class="panel__arrow panel__arrow--active" src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list panel-active">
+                                    <li>
+                                       <a class="panel__link panel__link--active" href="#">По рейтингу</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">По наименованию</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Категория <img class="panel__arrow"
+                                       src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list">
+                                    <li>
+                                       <a class="panel__link panel__link--active" href="#">Все</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Авторская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азербайджанская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азиатская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Американская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Арабская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Армянская</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Кухня <img class="panel__arrow panel__arrow--active"
+                                       src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list panel-active">
+                                    <li>
+                                       <a class="panel__link panel__link--active" href="#">Все</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Авторская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азербайджанская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азиатская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Американская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Арабская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Армянская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азиатская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Американская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Арабская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Армянская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азиатская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Американская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Арабская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азиатская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Американская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Арабская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Армянская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азиатская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Американская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Арабская</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Средний чек <img class="panel__arrow"
+                                       src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list">
+                                    <li>
+                                       <a class="panel__link" href="#">Все</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Авторская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азербайджанская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азиатская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Американская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Арабская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Армянская</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Услуги <img class="panel__arrow panel__arrow--active"
+                                    src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list filter-list panel-active">
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt1" id="filt1">
+                                             <label class="panel__label" for="filt1">Wi-Fi</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt2" id="filt2">
+                                             <label class="panel__label" for="filt2">Спортивные трансляции</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt3" id="filt3">
+                                             <label class="panel__label" for="filt3">Чайная карта и чайный сомелье</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt4" id="filt4">
+                                             <label class="panel__label" for="filt4">Кальян</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt5" id="filt5">
+                                             <label class="panel__label" for="filt5">Банкеты</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt6" id="filt6">
+                                             <label class="panel__label" for="filt6">Шведский стол</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt7" id="filt7">
+                                             <label class="panel__label" for="filt7">Лаундж-зона</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt8" id="filt8">
+                                             <label class="panel__label" for="filt8">Завтраки</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt9" id="filt9">
+                                             <label class="panel__label" for="filt9">Фитнес-меню</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <div class="panel__nav-check">
+                                          <form action="/">
+                                             <input class="panel__input" type="checkbox" name="filt10" id="filt10">
+                                             <label class="panel__label" for="filt10">Другие услуги</label>
+                                          </form>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <button class="panel__btn">Доступная среда<img class="panel__arrow"
+                                       src="img/filter/arrow.svg" alt="#"></button>
+                                 <ul class="panel__list">
+                                    <li>
+                                       <a class="panel__link panel__link--active" href="#">Все</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Авторская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азербайджанская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Азиатская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Американская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Арабская</a>
+                                    </li>
+                                    <li>
+                                       <a class="panel__link" href="#">Армянская</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="panel__nav-list">
+                                 <form action="/">
+                                    <input class="panel__input" type="checkbox" name="free1" id="free1">
+                                    <label class="panel__label" for="free1">Возможность бронирования</label>
+                                 </form>
+                              </li>
+                              <li class="panel__checkbox">
+                                 <form action="/">
+                                    <input class="panel__input" type="checkbox" name="free2" id="free2">
+                                    <label class="panel__label" for="free2">Бесплатное посещение</label>
+                                 </form>
+                              </li>
+                           </ul>
+                           <!-- panel__nav -->
+                        </div>
+                     </div>
+                     <div class="col-9">
+                        <div class="content__items">
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/1.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Литературное кафе</a>
+                              <div class="item__subtitle">Санкт-Петербург, Невский проспект, 18</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/2.jpg" alt="#">
+                                 <button class="item__icon item__icon--active">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Ресторан «La presse»</a>
+                              <div class="item__subtitle">Санкт-Петербург, Невский проспект, 69</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/3.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Палкинъ</a>
+                              <div class="item__subtitle">Санкт-Петербург, Невский проспект, 47</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/4.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Ресторан «Русская Рыбалка»</a>
+                              <div class="item__subtitle">Санкт-Петербург, Южная дорога, 11</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/5.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Buddha-Bar</a>
+                              <div class="item__subtitle">Санкт-Петербург, Синопская набережная, 76</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/6.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Ресторан «Абрикосовъ»</a>
+                              <div class="item__subtitle">Санкт-Петебург, Невский проспект, 40</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/7.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Чечил</a>
+                              <div class="item__subtitle">Санкт-Петербург, Дегтярный переулок, 2</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/8.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Бар-ресторан "Бирстайн"</a>
+                              <div class="item__subtitle">Санкт-Петербург, Гаккелевская улица, 21а</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/9.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Ресторан "Capuletti"</a>
+                              <div class="item__subtitle">Санкт-Петербург, Большой проспект Петроградской стороны, 74</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/10.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Ресторан "Корюшка"</a>
+                              <div class="item__subtitle">Санкт-Петербург, Петропавловская крепость, 3 (Заячий остров)</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/11.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Ресторан «Эривань»</a>
+                              <div class="item__subtitle">Санкт-Петербург, набережная реки Фонтанки, 51</div>
+                           </div>
+                           <div class="item">
+                              <div class="item__foto">
+                                 <img src="img/eat/12.jpg" alt="#">
+                                 <button class="item__icon">
+                                    <svg>
+                                       <use xlink:href="sprite/sprite.svg#add"></use>
+                                    </svg>
+                                 </button>
+                              </div>
+                              <a class="item__title" href="#">Husky Bar</a>
+                              <div class="item__subtitle">Санкт-Петербург, ул. 4-я Красноармейская, д, 12</div>
+                           </div>
+                        </div>
+                        <!-- pagination -->
+                        <div class="pagination">
+                           <button class="pagination__btn">Показать еще</button>
+                           <nav class="pagination__nav">
+                              <a class="pagination__link pagination__link--active" href="#">1</a>
+                              <a class="pagination__link" href="#">2</a>
+                              <span>...</span>
+                              <a class="pagination__link" href="#">28</a>
+                              <a class="pagination__link" href="#">29</a>
+                              <a class="pagination__arrow" href="#">
+                                 <img src="img/pagination/arrow.svg" alt="#">
+                              </a>
+                           </nav>
+                        </div>
+                        <!-- pagination -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- map -->
+         <div class="map">
+            <div class="map__inner">
+               <div class="map__iframe" id="map"></div>
+            </div>
+         </div>
+         <!-- map -->
+      </div>
+      <!-- footer -->
+      <footer itemscope itemtype="https://schema.org/WPFooter">
+         <div class="container-fluid container-xxl">
+             <div class="row gy-2">
+                 <div class="col-md-4 border-end">
+                     <form class="subscription-form">
+                         <div class="f_title">Подписка на рассылку</div>
+                         <p>Подпишитесь на рассылку и будьте в курсе последних новостей и событий!</p>
+                         <input type="text" class="input" placeholder="Введите Ваш email">
+                         <label class="checkbox">
+                             <input type="checkbox" name="checkbox" value=""><i></i><span>Я согласен с <a href="#">условиями рассылки</a></span>
+                         </label>
+                         <button class="btn-main btn-fluid">Подписаться</button>
+                     </form>
+
+                 </div>
+                 <div class="col-md-4 border-end">
+                     <div class="d-flex align-items-center">
+                         <img src="images/logo/safe-travels.svg" class="f_logo" alt="...">
+                         <div class="f_title m-0">Петербургское гостеприимство SafeTravelsSPB. Безопасные путешествия</div>
+                     </div>
+                     <div class="f_text">
+                         <p>В Санкт-Петербурге действует единый для сферы гостеприимства знак безопасного и комфортного отдыха Safe Travels SPb.</p>
+                         <p>Для туристов такой знак является гарантией того, что предоставляемые туристскими организациями услуги отвечают требованиям санитарно-гигиенических норм и стандартам безопасности.</p>
+                         <a href="#">подробнее</a>
+                     </div>
+                 </div>
+                 <div class="col-md-4">
+                     <div class="f_title">Контакты</div>
+                     <address class="d-flex align-items-center">
+                         <svg fill="currentColor"><use xlink:href="images/icons.svg#location"></use></svg>
+                         <a href="#">Санкт-Петербург, ул. Садовая, 37</a>
+                     </address>
+                     <address class="d-flex align-items-center">
+                         <svg fill="currentColor"><use xlink:href="images/icons.svg#phone"></use></svg>
+                         <a href="tel:+78002228812">+7 (800) 222-88-12 </a>
+                     </address>
+                     <address class="d-flex align-items-center">
+                         <svg fill="currentColor"><use xlink:href="images/icons.svg#email"></use></svg>
+                         <a href="mailto:info@visit-petersburg.ru">info@visit-petersburg.ru</a>
+                     </address>
+                     <hr class="f_hr">
+                     <div class="f_title">Официальные аккаунты в социальных сетях</div>
+                     <ul class="nav social-nav">
+                         <li>
+                             <a href="#" title="..." target="_blank">
+                                 <svg fill="currentColor"><use xlink:href="images/icons.svg#vk"></use></svg>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" title="..." target="_blank">
+                                 <svg fill="currentColor"><use xlink:href="images/icons.svg#facebook"></use></svg>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" title="..." target="_blank">
+                                 <svg fill="currentColor"><use xlink:href="images/icons.svg#ok"></use></svg>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" title="..." target="_blank">
+                                 <svg fill="currentColor"><use xlink:href="images/icons.svg#instagram"></use></svg>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" title="..." target="_blank">
+                                 <svg fill="currentColor"><use xlink:href="images/icons.svg#twitter"></use></svg>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#" title="..." target="_blank">
+                                 <svg fill="currentColor"><use xlink:href="images/icons.svg#youtube"></use></svg>
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-12">
+                     <div class="f_copyright">
+                         © 2021 Туристский реестр Санкт-Петербурга
+                     </div>
+                 </div>
+             </div>
+         </div>
+      </footer>
+      <div class="popup-address">
+         <div class="popup-address__inner">
+            <div class="popup-address__header">
+               <div class="popup-address__title">Адрес</div>
+               <button class="popup-address__close">
+                  <img src="img/footer/close.svg" alt="#">
+               </button>
+            </div>
+            <div class="popup-address__subtitle">
+               <img src="img/footer/point.svg" alt="#">
+               <span>Санкт-Петербург, ул. Садовая, 37</span>
+            </div>
+            <div class="popup-address__map-wrap">
+               <div class="popup-address__map" id="addressMap"></div>
+            </div>
+         </div>
+      </div>
+      <!-- footer -->
+   </div>
+
+   <!-- script-js -->
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="js/scripts.js"></script>
+   <script src="js/map.js"></script>
+</body>
+
+</html>
