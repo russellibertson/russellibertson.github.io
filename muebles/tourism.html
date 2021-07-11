@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Турпортал СПБ</title>
+   <link rel="stylesheet" href="css/style-tourism-main.css">
+   <link rel="stylesheet" href="css/template_styles.min.css">
+</head>
+
+<body>
+
+   <!-- main -->
+   <div class="main">
+      <!-- header -->
+      <header class="header" itemscope itemtype="https://schema.org/WPHeader">
+         <div class="container">
+            <div class="header_inner">
+               <div class="header_col_auto logo">
+                  <a href="#">
+                     <img src="img/logo/logo.svg" alt="...">
+                  </a>
+               </div>
+               <div class="header_col">
+                  <nav class="menu-body">
+                     <ul class="header-nav">
+                        <li class="nav-li active">
+                           <a href="#" class="nav-a">Новости</a>
+                        </li>
+                        <li class="nav-li">
+                           <a href="#" class="nav-a">События</a>
+                        </li>
+                        <li class="nav-li">
+                           <a href="#" class="nav-a">Куда пойти</a>
+                           <button type="button" class="nav-arrow">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#nav_arrow"></use>
+                              </svg>
+                           </button>
+                           <ul class="sub-ul">
+                              <li class="sub-li active">
+                                 <a href="#" class="sub-a">Достопримечательности</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Маршруты</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Экскурсии</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Где поесть</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Религия</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Развлечения</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Окрестности</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Шопинг</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="nav-li">
+                           <a href="#" class="nav-a">Моя поездка</a>
+                           <button type="button" class="nav-arrow">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#nav_arrow"></use>
+                              </svg>
+                           </button>
+                           <ul class="sub-ul">
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Где остановится </a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Транспорт</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Гиды-переводчики и экскурсоводы </a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Информационные центры</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Тематический туризм</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Статьи</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Путеводители </a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="nav-li">
+                           <a href="#" class="nav-a">Информация</a>
+                           <button type="button" class="nav-arrow">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#nav_arrow"></use>
+                              </svg>
+                           </button>
+                           <ul class="sub-ul">
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Справочная информация</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Контакты</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Визовые центры</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">E-visa</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Консульства</a>
+                              </li>
+                              <li class="sub-li">
+                                 <a href="#" class="sub-a">Почта</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="header_col_auto">
+                  <a href="#" class="header-icon header-search">
+                     <svg fill="currentColor">
+                        <use xlink:href="img/icons.svg#search"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="header_col_auto">
+                  <a href="#" class="header-icon header-eye">
+                     <svg fill="currentColor">
+                        <use xlink:href="img/icons.svg#eye"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="header_col_auto">
+                  <select class="language-select">
+                     <option>RU</option>
+                     <option>EN</option>
+                  </select>
+               </div>
+               <div class="header_col_auto">
+                  <a href="#" class="header-icon header-favorites">
+                     <svg fill="currentColor">
+                        <use xlink:href="img/icons.svg#favorites"></use>
+                     </svg>
+                     <span></span>
+                  </a>
+               </div>
+               <div class="header_col_auto header-logo">
+                  <a href="#" class="">
+                     <img src="img/logo/safe-travels.svg" alt="...">
+                  </a>
+               </div>
+               <div class="header_col_auto">
+                  <button type="button" class="hamburger">
+                     <b></b>
+                     <b></b>
+                     <b></b>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header -->
+      <div class="tourism">
+         <section class="tourism__banner">
+            <div class="container">
+               <div class="tourism__banner-offer">
+                  <h1>Тематический туризм в Санкт-Петербурге</h1>
+                  <p>Санкт-Петербург – это уникальное туристическое направление. Благодаря своему месторасположению, истории, архитектуре, 
+                  известным историческим личностям, произведениям литературы с мировой известностью, а также уникальному сочетанию красоты 
+                  окружающей природы и шедевров разных направлений искусства последних трех столетий, Северная столица может предложить 
+                  туристам широчайший спектр впечатлений.</p>
+                  <p>Мы предлагаем Вашему вниманию подборку материалов, подготовленных для различной 
+                  целевой аудитории с учетом тематической направленности путешествия.</p>
+               </div>
+            </div>
+         </section>
+         <section class="tourism__main">
+            <div class="container">
+               <div class="tourism__list">
+                  <div class="tourism__item">
+                     <img src="img/tourism/img1.jpg" alt="#">
+                     <h3><a href="#">Аграрный</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img2.jpg" alt="#">
+                     <h3><a href="#">Арктический</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img3.jpg" alt="#">
+                     <h3><a href="#">Гастрономический</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img4.jpg" alt="#">
+                     <h3><a href="#">Культурно-познавательный</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img5.jpg" alt="#">
+                     <h3><a href="#">Лечебно-оздоровительный</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img6.jpg" alt="#">
+                     <h3><a href="#">Медицинский</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img7.jpg" alt="#">
+                     <h3><a href="#">Промышленный</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img8.jpg" alt="#">
+                     <h3><a href="#">Религиозный</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img9.jpg" alt="#">
+                     <h3><a href="#">Романтический</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img10.jpg" alt="#">
+                     <h3><a href="#">Свадебный</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img11.jpg" alt="#">
+                     <h3><a href="#">Семейный</a></h3>
+                  </div>
+                  <div class="tourism__item">
+                     <img src="img/tourism/img12.jpg" alt="#">
+                     <h3><a href="#">Экологический</a></h3>
+                  </div>
+               </div>
+               <div class="tourism__tematic">
+                  <a href="#">Тематические кварталы Петербурга</a>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- about -->
+      <!-- footer -->
+      <footer class="footer" itemscope itemtype="https://schema.org/WPFooter">
+         <div class="container">
+            <div class="footer_inner">
+               <div class="footer_coll border-end">
+                  <form class="subscription_form">
+                     <div class="footer_title">Подписка на рассылку</div>
+                     <div class="footer_text">
+                        <p>Подпишитесь на рассылку и будьте в курсе последних новостей и событий!</p>
+                     </div>
+                     <input type="text" class="input" placeholder="Введите Ваш email">
+                     <label class="checkbox">
+                        <input type="checkbox" name="checkbox" value=""><i></i><span>Я согласен с <a href="#">условиями
+                              рассылки</a></span>
+                     </label>
+                     <button type="submit" class="btn-main">Подписаться</button>
+                  </form>
+               </div>
+               <div class="footer_coll border-end">
+                  <div class="footer_section">
+                     <div class="footer_section_title">
+                        <img src="img/logo/safe-travels.svg" class="footer_logo" alt="...">
+                        <div class="footer_title">Петербургское гостеприимство SafeTravelsSPB. Безопасные
+                           путешествия</div>
+                     </div>
+
+                     <div class="footer_text">
+                        <p>В Санкт-Петербурге действует единый для сферы гостеприимства знак безопасного и
+                           комфортного отдыха Safe Travels SPb.</p>
+                        <p>Для туристов такой знак является гарантией того, что предоставляемые туристскими
+                           организациями услуги отвечают требованиям санитарно-гигиенических норм и стандартам
+                           безопасности.</p>
+                        <a href="#">подробнее</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer_coll">
+                  <div class="footer_title">Контакты</div>
+                  <address>
+                     <svg fill="currentColor">
+                        <use xlink:href="img/icons.svg#location"></use>
+                     </svg>
+                     <a href="#" class="js-open-modal" data-modal="modal-address">Санкт-Петербург, ул. Садовая,
+                        37</a>
+                  </address>
+                  <address>
+                     <svg fill="currentColor">
+                        <use xlink:href="img/icons.svg#phone"></use>
+                     </svg>
+                     <a href="tel:+78002228812">+7 (800) 222-88-12 </a>
+                  </address>
+                  <address>
+                     <svg fill="currentColor">
+                        <use xlink:href="img/icons.svg#email"></use>
+                     </svg>
+                     <a href="mailto:info@visit-petersburg.ru">info@visit-petersburg.ru</a>
+                  </address>
+                  <hr class="footer_hr">
+                  <div class="footer_section_social">
+                     <div class="footer_title">Официальные аккаунты в социальных сетях</div>
+                     <ul class="footer_social">
+                        <li>
+                           <a href="#" title="..." target="_blank">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#vk"></use>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" title="..." target="_blank">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#facebook"></use>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" title="..." target="_blank">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#ok"></use>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" title="..." target="_blank">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#instagram"></use>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" title="..." target="_blank">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#twitter"></use>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" title="..." target="_blank">
+                              <svg fill="currentColor">
+                                 <use xlink:href="img/icons.svg#youtube"></use>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer_copyright">
+            <div class="container">
+               © <span itemprop="copyrightYear">2021</span> Туристский реестр Санкт-Петербурга
+            </div>
+         </div>
+      </footer>
+      <!-- footer -->
+   </div>
+   <!-- main -->
+
+   <!-- script-js -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="js/scripts.js"></script>
+
+   <script src="js/app.min.js"></script>
+
+   <script src="js/map-about.js"></script>
+   <script src="js/slider.js"></script>
+</body>
+
+</html>
