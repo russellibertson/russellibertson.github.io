@@ -1,0 +1,345 @@
+/** page-styles **/
+
+/** fonts **/
+
+@font-face {
+  font-family: "Inter-Bold";
+  font-display: swap;
+  src: url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  font-display: swap;
+  src: url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Thin";
+  font-display: swap;
+  src: url("../fonts/Inter-Thin.woff") format("woff"), url("../fonts/Inter-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 36px !important;
+  margin: 0 auto !important;
+}
+
+.main {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main__inner {
+  position: relative;
+}
+
+.main *,
+.main *:before,
+.main *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.main h1,
+.main h2,
+.main h3,
+.main h4,
+.main h5,
+.main h6 {
+  margin: 0;
+}
+
+.main p {
+  margin: 0;
+}
+
+.main li {
+  list-style: none;
+}
+
+.main ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.main input[type="number"]::-webkit-outer-spin-button,
+.main input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.main input[type="number"]:hover,
+.main input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+.main input[type=number]::-webkit-inner-spin-button,
+.main input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.main button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.main textarea {
+  resize: none;
+  border: none;
+}
+
+/** page-2 **/
+
+.tourism__banner{
+  background-image: url(../img/tourism/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.about__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border-radius: 54px;
+  padding: 12px;
+  -webkit-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.09), 0px 0.77037px 2.86667px rgba(0, 0, 0, 0.0546667), 0px 0.16296px 0.73333px rgba(0, 0, 0, 0.0353333);
+          box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.09), 0px 0.77037px 2.86667px rgba(0, 0, 0, 0.0546667), 0px 0.16296px 0.73333px rgba(0, 0, 0, 0.0353333);
+  padding-right: 24px;
+  width: 100%;
+  max-width: 110px;
+  height: 48px;
+  font-family: Inter-Medium;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #262626;
+  position: absolute;
+  left: 36px;
+  top: 24px;
+}
+
+.about__link img {
+  margin-right: 6px;
+}
+
+.tourism__about{
+  margin-top: 116px;
+}
+
+.tourism__banner h1{
+  font-size: 48px;
+  font-family: Inter-SemiBold;
+  width: 1134px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(30px);
+  border: 1px solid #E6EBEB;
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  bottom: -80px;
+}
+
+.tourism__about{
+  padding-bottom: 55px;
+}
+
+.tourism__about .container{
+  width: 900px;
+}
+
+.tourism__about-article img{
+  width: 100%;
+}
+
+.tourism__about-excerpt{
+  font-family: Inter-SemiBold;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  padding-bottom: 24px;
+  display: block;
+}
+
+.tourism__about-article{
+  padding: 24px 0;
+  border-top: 1px solid #EAEBEB;
+  border-bottom: 1px solid #EAEBEB;
+}
+
+.tourism__about-article img{
+  margin-bottom: 24px;
+}
+
+.tourism__about-article p{
+  line-height: 130%;
+  padding-bottom: 24px;
+}
+
+.tourism__about-article p:last-child{
+  padding-bottom: 0;
+}
+
+.tourism__about-list{
+  padding: 24px 0;
+  border-bottom: 1px solid #EAEBEB;  
+}
+
+.tourism__about-list h5{
+  line-height: 160%;
+}
+
+.tourism__about-list ul{
+  padding-left: 24px;
+}
+
+.tourism__about-list li{
+  line-height: 160%;
+  font-family: Inter-Regular;
+  display: flex;
+  align-items: center;
+}
+
+.tourism__about-list li::before{
+  display: block;
+  content: '';
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #14C4D8;
+  position: relative;
+  left: -10px;
+}
+
+.tourism__about-list li a{
+  text-decoration: underline;
+}
+
+.tourism__about-links{
+  padding-top: 24px;
+}
+
+.tourism__about-links li, .tourism__about-links span{
+  display: inline;
+}
+
+.tourism__about-links a{
+  text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .tourism__banner h1{
+    width: 950px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tourism__banner {
+    height: 310px;
+  }
+  .tourism__banner h1{
+    width: 100%;
+    height: 120px;
+    font-size: 38px;
+  }
+  .tourism__about .container{
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .tourism__about .container{
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .tourism__about-excerpt{
+    font-size: 19px;
+  }
+  .tourism__about-article p{
+    font-size: 15px;
+  }
+  .tourism__banner h1{
+    font-size: 28px;
+  }
+  .tourism__banner h1{
+    height: 100px;
+  }
+  .tourism__banner{
+    height: 210px;
+  }
+}
+
+@media (max-width: 430px) {
+  .tourism__about-excerpt{
+    font-size: 17px;
+  }
+}
