@@ -158,7 +158,7 @@ $btnTop.on('click', function() {
     - sddefault - 640 x 480
     - maxresdefault - 1920 x 1080
     */
-    var source = "/img/video.jpg";
+    var source = "img/video.jpg";
 
     /*
     creates new image and sets the source attribute to the thumbnail
