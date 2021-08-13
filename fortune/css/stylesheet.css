@@ -678,7 +678,8 @@ input[type="search"] {
   margin-bottom: 40px;
 }
 
-.video video {
+.video video,
+.video iframe {
   border-radius: 14px;
   width: 100%;
   height: 100%;
@@ -688,7 +689,7 @@ input[type="search"] {
 .video__wrapper {
   position: relative;
   width: 668px;
-  width-height: 380px;
+  height: 380px;
   border-radius: 18px;
   border: 4px solid #FFFFFF;
   display: block;
