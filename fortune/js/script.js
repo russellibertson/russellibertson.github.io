@@ -159,6 +159,8 @@ $btnTop.on('click', function() {
     - maxresdefault - 1920 x 1080
     */
     var source = "img/video.jpg";
+    var alter = "video";
+    var intro = "My video in youtube";
 
     /*
     creates new image and sets the source attribute to the thumbnail
@@ -166,6 +168,8 @@ $btnTop.on('click', function() {
     */
     var image = new Image();
     image.src = source;
+    image.alt = alter;
+    image.title = intro;
     image.addEventListener("load", function() {
       youtube[i].appendChild(image);
     }(i));
