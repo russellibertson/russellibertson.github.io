@@ -1,0 +1,404 @@
+.no-webp .proxy {
+  background-image: url("../img/bg-proxy.jpg"); }
+
+.proxy {
+  padding: 60px 0 90px;
+  background-size: cover;
+}
+
+.proxy h2 {
+  color: #fff;
+}
+
+.proxy-form {
+  background: #F3F6FA;
+  -webkit-box-shadow: 0px 3.05785px 12.2314px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3.05785px 12.2314px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 979px;
+  margin: 56px auto 0;
+  padding: 30px 36px 40px;
+}
+
+.proxy-form-key-title,
+.proxy-form-bindings-title {
+  color: #5B85F1;
+  font-size: 31px;
+  text-align: center;
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+.proxy-form-key-input {
+  position: relative;
+  height: 59px;
+  width: 630px;
+  margin: 0 auto 40px;
+  border: 3px solid #5B85F1;
+  border-radius: 5px;
+}
+
+.proxy-form-key-input input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding-left: 130px;
+  border: 0;
+  background: #F5F5F5;
+}
+
+.proxy-form-key-input .proxy-form-key-tip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 115px;
+  background: #E7E7E7;
+  height: 100%;
+  text-align: center;
+  line-height: 51px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.proxy-form-bindings-type {
+  padding: 10.5px 36px;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 35px;
+  color: #8D8D8D;
+  position: relative;
+  display: block;
+}
+
+.proxy-form-bindings-type input {
+  width: 100%;
+  border: 2px solid #8D8D8D;
+  height: 100%;
+  border-radius: 3.75px;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  top: 0;
+}
+
+.proxy-form-bindings-type input:checked {
+  background-color: #5B85F1;
+  border: 2px solid #5B85F1;
+}
+
+.proxy-form-bindings-type input:checked ~ span {
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.proxy-form-bindings-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.proxy-form-tools {
+  margin-top: 40px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 25px;
+}
+
+.proxy-form-tools-build,
+.proxy-form-tools-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proxy-form-tools select {
+  padding: 11px 50px;
+  background: #5B85F1;
+  border: 0;
+  font-size: 19px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3.75px;
+  color: #fff;
+  position: relative;
+  background-image: url("../img/active.svg");
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.proxy-form-tools select option {
+  background-color: #fff;
+  color: #000;
+}
+
+.proxy-form-tools-build span {
+  font-size: 22px;
+}
+
+.proxy-form-tools-build select {
+  min-width: 203px;
+}
+
+.proxy-form-tools-choice {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 3px solid #5B85F1;
+}
+
+.proxy-form-tools-list {
+  padding: 30px 0 25px;
+}
+
+.proxy-form-tools-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.proxy-form-tools-item span {
+  font-size: 20px;
+}
+
+.proxy-form-tools-item:last-child {
+  margin-bottom: 0;
+}
+
+.proxy-form-tools-item input {
+  width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 33px;
+  height: 48px;
+  border: 2.84845px solid #5B85F1;
+  border-radius: 5px;
+}
+
+.proxy-form-tools-item button {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  margin-right: 23px;
+}
+
+.proxy-form-tip {
+  color: #575757;
+  font-size: 17px;
+}
+
+.proxy-form-tip a {
+  color: #5b85f1;
+}
+
+@media (max-width: 1200px) {
+  .proxy-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .proxy-form {
+    margin: 45px auto 0;
+  }
+
+  .proxy-form-key-title,
+  .proxy-form-bindings-title {
+    font-size: 27px;
+  }
+
+  .proxy-form-key-input {
+    width: 100%;
+  }
+
+  .proxy-form-bindings-type {
+    margin: 0 15px;
+  }
+
+  .proxy-form-tools-build select:first-child,
+  .proxy-form-tools-choice select:first-child {
+    margin: 0 auto 15px;
+  }
+
+  .proxy-form-tools-build {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .proxy-form-tools-build span {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .proxy-form-tools-choice {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .proxy-form-tools-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .proxy-form-tools-item input {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .proxy-form-tools-item button {
+    margin-right: 0;
+  }
+
+  .proxy-form-tip br {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .proxy .container {
+    width: 90%;
+  }
+
+  .proxy-form {
+    padding: 30px 30px 40px;
+  }
+
+  .proxy-form-key-title,
+  .proxy-form-bindings-title {
+    font-size: 23px;
+  }
+
+  .proxy-form-bindings-type:last-child {
+    margin-top: 25px;
+  }
+
+  .proxy-form-bindings-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .proxy-form-tools-build select,
+  .proxy-form-tools-choice select {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .proxy-form-tools-build select:last-child,
+  .proxy-form-tools-choice select:last-child {
+    margin-bottom: 0;
+  }
+
+  .proxy-form-tools-build span {
+    text-align: center;
+  }
+
+  .proxy-form-tools-choice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .proxy-form-tools-item input {
+    width: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  .proxy .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .proxy {
+    padding: 60px 0;
+  }
+
+  .proxy-form {
+    border-radius: 0;
+    padding: 25px 15px 30px;
+  }
+
+  .proxy-form-tools {
+    padding: 25px 20px;
+  }
+
+  .proxy-form-tools-build select,
+  .proxy-form-tools-choice select {
+    padding: 11px 35px;
+    font-size: 15px;
+  }
+
+  .proxy-form-tools-item span {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .proxy-form-tools-item input {
+    width: 80%;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 435px) {
+  .proxy-form {
+    padding: 25px 0 0;
+  }
+
+  .proxy-form-bindings-type {
+    padding: 10px 25px;
+  }
+
+  .proxy-form-bindings-type span {
+    font-size: 16px;
+  }
+
+  .proxy-form-tools {
+    padding: 25px 15px;
+    border-radius: 0;
+  }
+}
+
+.webp .proxy { background-image: url(../img/bg-proxy.webp); }

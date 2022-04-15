@@ -1,0 +1,139 @@
+.work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+  position: relative;
+}
+
+.work-list::before,
+.work-list::after {
+  content: "";
+  display: block;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.work-list::before {
+  left: 358px;
+}
+
+.work-list::after {
+  right: 358px;
+}
+
+.work-item {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3.05785px 12.2314px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3.05785px 12.2314px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 334px;
+  color: #8792A3;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.work-item h3 {
+  font-size: 23px;
+  margin: 24px 15px;
+}
+
+.work-item p {
+  font-size: 20px;
+}
+
+.work-item img {
+  display: inline;
+}
+
+@media (max-width: 1300px) {
+  .work-list::before,
+  .work-list::after {
+    width: 52px;
+    height: 10px;
+    background-size: 52px 10px;
+  }
+
+  .work-list::before {
+    left: 342px;
+  }
+
+  .work-list::after {
+    right: 342px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .work-list::before,
+  .work-list::after {
+    display: none;
+  }
+
+  .work-item {
+    width: 300px;
+  }
+
+  .work-item img {
+    height: 100px;
+  }
+
+  .work-item h3 {
+    font-size: 20px;
+  }
+
+  .work-item p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .work-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .work-item {
+    width: 320px;
+    margin: 0 15px 30px;
+  }
+
+  .work-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-list {
+    margin-top: 35px;
+  }
+
+  .work-item {
+    width: 100%;
+  }
+
+  .work-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .work-item {
+    margin: 0 0 30px;
+  }
+
+  .work-item:last-child {
+    margin-bottom: 0;
+  }
+}
